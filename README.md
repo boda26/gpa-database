@@ -54,4 +54,3 @@ gcloud config set project cs411-sp21
 gcloud auth login
 gcloud app deploy
 ```
-# gpa_database

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Customized Grade Disparity</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/custom.css')}}">
+    </head>
+
+    <body>
+
+
+    <main role="main" class="container extra-bottom">
+        <h1 class="mt-5">Customized Grade Disparity</h1>
+    </main>
+
+
+    <div class="container" style="padding-bottom: 10px;">    
+        
+        <!-- Button trigger modal -->
+        <div style="text-align: left;">
+        <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#search-modal" data-source="Search Instructor">Fuzzy Search</button>
+        </div>
+        <div class="modal fade" id="search-modal" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Label">Search</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="pet-form-display">Instructor</span>
+                    <input type="text" class="form-control-0" aria-label="ptype" aria-describedby="basic-addon1">
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button href="localhost/search" id="search" type="button" class="btn btn-primary">Search</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="container" style="padding-bottom: 10px;">    
+        
+        <!-- Button trigger modal -->
+        <div style="text-align: left;">
+        <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#search-ge-modal" data-source="Search Instructor">Search GE</button>
+        </div>
+        <div class="modal fade" id="search-ge-modal" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Label">Search General Education Course</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="pet-form-display">GE type</span>
+                    <input type="text" class="form-control-0" aria-label="ptype" aria-describedby="basic-addon1">
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button href="localhost/ge.html" id="search-ge" type="button" class="btn btn-primary">Search</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="container" style="padding-bottom: 10px;">    
+        
+        <!-- Button trigger modal -->
+        <div style="text-align: left;">
+        <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#search-instructor-modal" data-source="Search Instructor">Search Instructor History</button>
+        </div>
+        <div class="modal fade" id="search-instructor-modal" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Label">Search Instructor History</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="pet-form-display">Instructor</span>
+                    <input type="text" class="form-control-0" aria-label="ptype" aria-describedby="basic-addon1">
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button href="localhost/instructor.html" id="search-instructor" type="button" class="btn btn-primary">Search</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="container" style="padding-bottom: 10px;">    
+        
+        <!-- Button trigger modal -->
+        <div style="text-align: left;">
+        <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#search-course-modal" data-source="Search Course">Search Course History</button>
+        </div>
+        <div class="modal fade" id="search-course-modal" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Label">Search Course History</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="subject-form-display">Subject</span>
+                    <input type="text" class="form-control-0" aria-label="ptype" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="number-form-display">Number</span>
+                    <input type="text" class="form-control-1" aria-label="ptype" aria-describedby="basic-addon1">
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button href="localhost/course" id="search-course" type="button" class="btn btn-primary">Search</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="container" style="padding-bottom: 10px;">    
+        
+        <!-- Button trigger modal -->
+        <div style="text-align: left;">
+        <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#insert-modal" data-source="Insert">Insert</button>
+        </div>
+        <div class="modal fade" id="insert-modal" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Label">Insert</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="instructor-form-display">Instructor</span>
+                    <input type="text" class="form-control-0" aria-label="ptype" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="rating-form-display">Rating</span>
+                    <input type="text" class="form-control-1" aria-label="ptype" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="password-form-display">Password</span>
+                    <input type="text" class="form-control-2" aria-label="ptype" aria-describedby="basic-addon1">
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button href="localhost/insert" id="submit-insert" type="button" class="btn btn-primary">Insert</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <!--Todo Table-->
+    <div class="container table-responsive">
+    <table class="table">
+        <thead>
+        <tr>
+            <th class="instructor">Instructor</th>
+            <th class="rating">Rating</th>
+            <th class="tag">Tag</th>
+            <th class="edit">Edit</th>
+            <th class="delete">Delete</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {% for item in items %}
+            <tr>
+                <td>{{item.Instructor}}</td>
+                <td>{{item.Rating}}</td>
+                <td>{{item.Tag}}</td>
+                <td><button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#edit-modal" data-source="{{item.Instructor}}""><i class="fa fa-pen fa-1" aria-hidden="true"></i></button>
+                    <div class="modal fade" id="edit-modal" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="Label">Edit</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="task-form-display-1">Instructor</span>
+                                <input type="text" class="form-control-2" value={{item.Instructor}} aria-label="task-name" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="task-form-display-2">Rating</span>
+                                <input type="text" class="form-control-0" aria-label="task-name" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="task-form-display-3">Password</span>
+                                <input type="text" class="form-control-1" aria-label="task-name" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button id="submit-edit" type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </td>
+                <td><button class="btn btn-outline-secondary btn-sm remove" data-source="{{item.Instructor}}"type="button"><i class="fa fa-trash fa-1" aria-hidden="true">
+                </i></button></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+            
+    </table>
+    </div>
+
+    <div class="msg_desc">
+        <img class="totoro" src="{{ url_for('static', filename=temp) }}" alt="">
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+<p class="text-muted"><small>App developed for CS411 UIUC by @boda2 reference: @tcheng10</small>
+</p>
+</div>
+</footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bund
+le.min.js"
+integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0
+" crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='script/modal.js') }}"></script>
+
+</html>

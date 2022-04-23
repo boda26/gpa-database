@@ -1,4 +1,5 @@
 # Customized Grade Disparity
+Created by Boda Song, Yucheng Jiang, Yueqi Jiang, Xuning Hu
 This is final project for CS411. 
 # Tutorial
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sY1lLGe7ECA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
